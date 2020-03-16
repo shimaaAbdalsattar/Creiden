@@ -1,0 +1,7 @@
+<section class="main-container">
+  <form class="search-form" autocomplete="off">
+    <p class="title">Search For User!</p>
+    <input type="text" name="searchKeyControl" class="txt-control" placeholder="User Login ID" [(ngModel)]="searchKey">
+    <button [disabled]="!searchKey" class="btn-primary" (click)="search()">Search</button>
+  </form>
+</section>

@@ -1,0 +1,21 @@
+.main-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../assets/imgs/bg.png);
+    .search-form{
+        flex-direction: column;
+        .title{
+            color: white;
+            text-align: center;
+        }
+        .btn-primary{
+            background-color: #eb9325;
+            color: white;
+            padding: 10px 25px;
+        }
+    }
+}

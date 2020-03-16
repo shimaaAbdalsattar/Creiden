@@ -1,0 +1,31 @@
+<section class="main-container">
+  <section class="heading">
+    <img src="../../../assets/imgs/arrow.png" (click)="goBack()">
+  </section>
+  <section class="main-content" *ngIf="userData" [style.backgroundImage]="'url('+ userData.avatar_url+')'">
+    <section class="data-container">
+      <img class="user-avatar" [src]="userData.avatar_url">
+      <h1 class="name">{{userData.name}}</h1>
+      <p class="location">{{userData.location}}</p>
+      <a class="btn-primary gitHub-link" [href]="userData.blog">
+        <img src="../../../assets/imgs/user-colored.png"> GitHub
+      </a>
+    </section>
+    <section class="data-footer">
+      <section class="footer-item">
+        <img class="icon" src="../../../assets/imgs/user.png">
+        <div class="data">
+          <div class="count">{{userData.followers}}</div>
+          <div class="title">Followers</div>
+        </div>
+      </section>
+      <section class="footer-item">
+          <img class="icon" src="../../../assets/imgs/user-out.png">
+          <div class="data">
+            <div class="count">{{userData.following}}</div>
+            <div class="title">Following</div>
+          </div>
+        </section>
+    </section>
+  </section>
+</section>
